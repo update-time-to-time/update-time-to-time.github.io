@@ -40,10 +40,11 @@ layout: page
 {% endif %}
 
 
+
 <div id="post-list">
 
 {% for post in posts %}
-
+{% if post.visible != false %}
   <div class="post-preview">
     <h1>
       <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
@@ -86,7 +87,7 @@ layout: page
     </div> <!-- .post-meta -->
 
   </div> <!-- .post-review -->
-
+  {% endif %}
 {% endfor %}
 
 </div> <!-- #post-list -->
@@ -94,3 +95,8 @@ layout: page
 {% if paginator.total_pages > 1 %}
   {% include post-paginator.html %}
 {% endif %}
+<div class="row">
+  <iframe class="sub-ifm col-12 col-lg-11 col-xl-8" frameborder="0" 
+  scrolling="no"
+  src="https://mailchi.mp/d5cb46942bfa/9k9neyy0tv"></iframe>
+</div>

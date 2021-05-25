@@ -2,6 +2,13 @@
   Style for Homepage
 */
 
+.sub-ifm {
+  width: 500px;
+  height: 170px;
+  position: fixed;
+  bottom: 50px;
+}
+
 .pagination {
   color: var(--btn-patinator-text-color);
   font-family: 'Lato', sans-serif;
@@ -10,6 +17,7 @@
     text-decoration: none;
   }
 
+  
   .page-item {
     .page-link {
       color: inherit;
